@@ -10,7 +10,7 @@ public class Student {
     String username;
     boolean quitCourse;
     boolean refundApproved;
-    String question;
+    List<String> question = new ArrayList<>();
     String responses;
 
     // constructor which gives password, username a default value
@@ -36,6 +36,11 @@ public class Student {
         course.add(courseName);
     }
 
+    // remove courseName from Arraylist course
+    public void quitCourse(String courseName) {
+        this.course.remove(courseName);
+    }
+
     // returns responses from the instructor to the student's questions
     public String receiveResponse() {
         return responses;
@@ -43,12 +48,7 @@ public class Student {
 
     // adds question to string with \n to seperate them
     public void addQuestion(String sentence) {
-        question += sentence + "\n";
-    }
-
-    // returns the student's question
-    public String returnQuestion() {
-        return question;
+        question.add(sentence);
     }
 
     // store new email address into address variable
@@ -64,11 +64,6 @@ public class Student {
     // store new password into password variable
     public void changePassword(String password) {
         this.password = password;
-    }
-
-    // remove courseName from Arraylist course
-    public void quitCourse(String courseName) {
-        this.course.remove(courseName);
     }
 
     // returns True if refund is applicable
