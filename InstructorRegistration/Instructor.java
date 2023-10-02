@@ -1,19 +1,32 @@
 package InstructorRegistration;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Instructor {
     String email;
     String name;
     String username;
+    List<String> course = new ArrayList<>();
 
-    public Instructor(){
+    public Instructor() {
         email = null;
         name = null;
         username = null;
     }
+
     public Instructor(String email, String name, String username) {
         this.email = email;
         this.name = name;
         this.username = username;
+    }
+
+    public List<String> getPublishedCourses() {
+        return course;
+    }
+
+    public void editPublishedCourses(String courseName) {
+        this.course.add(courseName);
     }
 
     public String getEmail() {
