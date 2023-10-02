@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Instructor {
+    public static Object teacher;
     String email;
     String name;
     String username;
