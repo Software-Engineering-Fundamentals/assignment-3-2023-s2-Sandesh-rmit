@@ -8,9 +8,9 @@ public class scenario_1 {
         Courses newCourse = new Courses("Maths", "Daniel", "Fun class", false);
 
         // add newCourse to instructors published courses
-        teacher.editPublishedCourses(newCourse.getTitle());
+        teacher.editPublishedCourses(newCourse.getTitle()); // add courses to newCourse object
 
-        System.out.print(teacher.getPublishedCourses());
+        System.out.print(teacher.getPublishedCourses()); // print courses from getPublishedCourses
 
         // String class = newcourse.title();
 

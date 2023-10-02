@@ -12,6 +12,7 @@ public class Student {
     boolean refundApproved;
     List<String> question = new ArrayList<>();
     String responses;
+    String enquiry;
 
     // constructor which gives password, username a default value
     public Student() {
@@ -34,6 +35,10 @@ public class Student {
     // adds courseName into ArrayList course
     public void editCourses(String courseName) {
         course.add(courseName);
+    }
+
+    public void sendEnquiry (String enquiry){
+        this.enquiry += enquiry;
     }
 
     // remove courseName from Arraylist course
