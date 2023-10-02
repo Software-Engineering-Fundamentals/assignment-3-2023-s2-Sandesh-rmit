@@ -6,7 +6,7 @@ public class Main {
         // Lodge a general inquiry about the portal which is successfully addressed by
         // the Manager
 
-        Student student = new Student("sophie33@gmail.com", "sophfam01", "asdfghjkl")
+        Student student = new Student("sophie33@gmail.com", "sophfam01", "asdfghjkl");
 
     }
 }
