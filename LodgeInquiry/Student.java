@@ -1,4 +1,4 @@
-package InstructorRegistration;
+package LodgeInquiry;
 
 public class Student {
     String email;
@@ -62,13 +62,13 @@ public class Student {
         return quitCourse;
     }
 
-    public boolean applyForRefund(boolean refund){
+    public boolean applyForRefund(boolean refund) {
         refundApproved = false;
 
-        if(refund == true){
+        if (refund == true) {
             refundApproved = refund;
         }
 
         return refundApproved;
-    }>>>>>>>741f 3d 4602f de66b5e582fdb5981a30c7ed814f8
+    }
 }
