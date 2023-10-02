@@ -1,36 +1,74 @@
 package InstructorRegistration;
 
-import java.util.*;
-
 public class Student {
     String email;
-    String name;
-    String username;
-    List<String> course = new ArrayList<>();
+    String course;
+    String password;
+    String userName;
+    boolean quitCourse;
+    boolean refundApproved;
+    String question;
+    String responses;
 
-    public Student() {
-        email = null;
-        name = null;
-        username = null;
+    public String getCourses() {
+        return course;
     }
 
-    public Student(String email, String name, String username) {
-        this.email = email;
-        this.name = name;
-        this.username = username;
+    public String receiveResponse() {
+        return responses;
     }
 
-    public void editCourses() {
-        String courseName = "duifue";
-        this.course.add(courseName);
+    public void addQuestion(String sentence) {
+        question += sentence + "\n";
     }
 
-    // returns a list of Courses
-    public List<String> getCourses() {
-        return this.course;
+    public String returnQuestion() {
+        return question;
     }
 
-    // public void quitCourse() {
+    public void changeEmail(String newEmail) {
+        email = newEmail;
+        // store new email address into address variable
+    }
 
-    // }
+    public String getEmail() {
+        return email;
+    }
+
+    public void changePassword(String newPassword) {
+        password = newPassword;
+        // store new password into password variable
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void changeUserName(String newUserName) {
+        userName = newUserName;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public boolean quitCourse(boolean quit) {
+        quitCourse = false;
+
+        if (quit == true) {
+            quitCourse = quit;
+        }
+
+        return quitCourse;
+    }
+
+    public boolean applyForRefund(boolean refund){
+        refundApproved = false;
+
+        if(refund == true){
+            refundApproved = refund;
+        }
+
+        return refundApproved;
+    }>>>>>>>741f 3d 4602f de66b5e582fdb5981a30c7ed814f8
 }
