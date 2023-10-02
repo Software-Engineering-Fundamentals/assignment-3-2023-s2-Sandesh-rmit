@@ -1,62 +1,61 @@
 package InstructorRegistration;
 
 public class Student {
-String email;
-String course;
-String password;
-String userName;
-boolean quitCourse;
-boolean refundApproved;
-String question;
-String responses;
-
+    String email;
+    String course;
+    String password;
+    String userName;
+    boolean quitCourse;
+    boolean refundApproved;
+    String question;
+    String responses;
 
     public String getCourses() {
         return course;
     }
 
-    public String receiveResponse(){
+    public String receiveResponse() {
         return responses;
     }
 
-    public void addQuestion(String sentence){
+    public void addQuestion(String sentence) {
         question += sentence + "\n";
     }
 
-    public String returnQuestion(){
+    public String returnQuestion() {
         return question;
     }
 
     public void changeEmail(String newEmail) {
-        email = newEmail; 
+        email = newEmail;
         // store new email address into address variable
-    } 
+    }
 
     public String getEmail() {
         return email;
     }
 
     public void changePassword(String newPassword) {
-        password = newPassword; 
+        password = newPassword;
         // store new password into password variable
-    } 
+    }
 
     public String getPassword() {
         return password;
     }
 
-    public void changeUserName(String newUserName){
+    public void changeUserName(String newUserName) {
         userName = newUserName;
     }
 
-    public String getUserName(){
+    public String getUserName() {
         return userName;
     }
 
-    public boolean quitCourse(boolean quit){
+    public boolean quitCourse(boolean quit) {
         quitCourse = false;
 
-        if(quit == true){
+        if (quit == true) {
             quitCourse = quit;
         }
 
@@ -71,5 +70,5 @@ String responses;
         }
 
         return refundApproved;
-    }
+    }>>>>>>>741f 3d 4602f de66b5e582fdb5981a30c7ed814f8
 }
