@@ -9,10 +9,11 @@ public class Main {
         Student student = new Student("sophie33@gmail.com", "sophfam01", "asdfghjkl");
         Manager manager = new Manager("Manager@gmail.com", "MR Manager");
 
+        String a = student.sendEnquiry("Can i have a discount?");
+        String b = manager
+                .respondToEnquiry("No, unfortunately we don't have promotions to able to provide any discounts");
 
-        student.sendEnquiry("Can i have a discount?");
-        String b = manager.respondToEnquiry("No, unfortunately we don't have promotions to able to provide any discounts");
-
+        System.out.print(a);
         System.out.println(b);
     }
 }

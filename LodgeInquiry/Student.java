@@ -37,8 +37,9 @@ public class Student {
         course.add(courseName);
     }
 
-    public void sendEnquiry (String enquiry){
+    public String sendEnquiry(String enquiry) {
         this.enquiry += enquiry;
+        return this.enquiry;
     }
 
     // remove courseName from Arraylist course
