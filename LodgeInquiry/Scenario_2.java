@@ -19,7 +19,7 @@ public class Scenario_2 {
         String b = manager
                 .respondToEnquiry("No, unfortunately we don't have promotions to able to provide any discounts");
 
-        System.out.print(a);
+        System.out.println(a);
         System.out.println(b);
     }
 }
