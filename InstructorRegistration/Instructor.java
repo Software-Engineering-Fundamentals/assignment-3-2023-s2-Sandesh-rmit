@@ -8,8 +8,9 @@ public class Instructor {
     String email;
     String name;
     String username;
-    List<String> course = new ArrayList<>();
+    ArrayList<String> course = new ArrayList<>();
 
+    // the constructor classes for instructor, defaults to null if no information is provided
     public Instructor() {
         email = null;
         name = null;
@@ -22,14 +23,17 @@ public class Instructor {
         this.username = username;
     }
 
+    // returns all the courses that the instructor has published
     public List<String> getPublishedCourses() {
         return course;
     }
 
+    // adds a course to the list of published courses
     public void editPublishedCourses(String courseName) {
         this.course.add(courseName);
     }
 
+    // getter and setter methods for obtaining the instructor's information
     public String getEmail() {
         return email;
     }

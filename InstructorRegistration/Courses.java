@@ -57,8 +57,13 @@ public class Courses {
         examQuestionList.add(examQuestion);
     }  
     
-    public void createMCQ(String MCQ_question) {
+    // mcq lists have one mcq question then 4 answer options; every 4 items in a list after an mcq question are related to that specific mcq question
+    public void createMCQ(String MCQ_question, String option1, String option2, String option3, String option4) {
         MCQ_questionList.add(MCQ_question);
+        MCQ_questionList.add(option1);
+        MCQ_questionList.add(option2);
+        MCQ_questionList.add(option3);
+        MCQ_questionList.add(option4);
     }
 
     // the videoFile variable is listed as a string to denote the file name, in actual application, it would be the specific file type; the fileList array list contains multiple
