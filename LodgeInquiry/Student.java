@@ -39,7 +39,7 @@ public class Student {
 
     public String sendEnquiry(String enquiry) {
         this.enquiry += enquiry;
-        return this.enquiry;
+        return enquiry;
     }
 
     // remove courseName from Arraylist course
