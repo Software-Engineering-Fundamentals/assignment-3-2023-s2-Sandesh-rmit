@@ -1,13 +1,15 @@
 package InstructorRegistration;
 
-public class scenario_1 {
+public class Scenario_1 {
     public static void main(String args[]) {
         // this file will be responsible for code related to the following scenario:
         // Instructor registers a course on the learning portal/website
-        
 
-        // in the actual implementation, the instructor has the ability to manually enter the information into the fields, however in this "demo" we hardcode the values
-        // these are the hardcoded values for the parameters for the instructor and courses classes
+        // in the actual implementation, the instructor has the ability to manually
+        // enter the information into the fields, however in this "demo" we hardcode the
+        // values
+        // these are the hardcoded values for the parameters for the instructor and
+        // courses classes
         // this assumes that an instructor account already exists
         String email = "daniel@gmail.com";
         String name = "Daniel";
@@ -22,7 +24,7 @@ public class scenario_1 {
 
         // adding course
         teacher.editPublishedCourses(newCourse.title);
-        
+
         // add video
         String videoName = "lecture1_video.mp4";
         newCourse.addVideo(videoName);
